@@ -1,0 +1,13 @@
+What is the minimum and maximum number ofcharacters allowable?
+What are the allowable characters in naming?
+Is Encryption automatically applied?
+Encryption types 
+    SSE-S3
+    SSE-KMS
+    DSSE-KMS
+Storage class is object level
+Crud operations for S3
+ s3api
+ aws s3
+working with permissions
+    chmod u+x ./s3/bash-scripts/sync - give user permission to run script

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+echo "== create bucket =="
+# Check for bucket name
+if [ -z "$1" ]; then
+  echo "Usage: $0 <bucket-name>"
+  exit 1
+fi
+
+BUCKET_NAME=$1
+
+# https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object.html#examples
+aws s3api get-object \
+--bucket "$BUCKET_NAME" \
+--output text

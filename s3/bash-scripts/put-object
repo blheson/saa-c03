@@ -1,0 +1,25 @@
+echo "== put-object"
+
+set -e
+
+# Check for bucket name
+if [ -z "$1" ]; then
+  echo "Issue with bucket name"
+  exit 1
+fi
+
+# check for filename prefix
+if [ -z "$2" ]; then
+    echo "Issue with file name"
+    exit 1
+fi
+
+BUCKET_NAME=$1
+FILENAME_PREFIX=$2
+
+OBJECT_KEY=$(basename "$FILENAME_PREFIX")
+
+aws s3api put-object \
+--bucket "$BUCKET_NAME" \
+--body "$FILENAME_PREFIX" \
+--key "$OBJECT_KEY"
