@@ -11,3 +11,7 @@ Crud operations for S3
  aws s3
 working with permissions
     chmod u+x ./s3/bash-scripts/sync - give user permission to run script
+
+
+cloudformation
+--no-execute-changeset

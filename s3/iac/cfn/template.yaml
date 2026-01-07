@@ -1,0 +1,8 @@
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation template to create an S3 bucket with Retain deletion policy.
+Resources:
+  S3Bucket:
+    # https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html
+    Type: AWS::S3::Bucket
+    # we do not need to supply a bucket name, AWS will generate a unique name for us
