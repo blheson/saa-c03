@@ -12,4 +12,5 @@ BUCKET_NAME=$1
 # https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object.html#examples
 aws s3api get-object \
 --bucket "$BUCKET_NAME" \
+--key "hello.txt" \
 --output text
