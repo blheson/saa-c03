@@ -37,3 +37,12 @@ s3 Objects
     Checksums - integrity
     Object Prefixes - simulate folder structure
     Object locking - immutable
+s3 Checksums
+    For security - detect integrity
+    available Checksums are
+        CRC32 (Cyclic Redundancy check)
+        CRC32C
+        SHA1 (Secure Hash Algorithm)
+        SHA256
+s3 Prefixes
+    char limit 1024
