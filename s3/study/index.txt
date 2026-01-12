@@ -46,3 +46,10 @@ s3 Checksums
         SHA256
 s3 Prefixes
     char limit 1024
+s3 metadata
+    System defined - not generally editable
+        cache control
+        content-type
+    user defined
+        x-amz-meta-xxx
+    use s3api head-object to get the metadata
