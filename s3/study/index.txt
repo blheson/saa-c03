@@ -15,3 +15,25 @@ working with permissions
 
 cloudformation
 --no-execute-changeset
+
+cdk - language to cloudformation
+
+Bucket names
+only alphanum, - ,.
+3 to 63
+no s3 variants (words, number)
+no adjacent ..
+no space
+
+Resriction
+ Default bucket 100
+ 100MB use multiparts
+
+Bucket types
+    General purpose - flat
+    Directory
+s3 Objects
+    Etags - Entity Tag - detect change
+    Checksums - integrity
+    Object Prefixes - simulate folder structure
+    Object locking - immutable
